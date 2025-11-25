@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        display=()=>
+    {
+        var a=parseInt(document.getElementById("t1").value);
+        if(a>=18)
+    {
+        document.getElementById("result").innerHTML=`${a} is eligible for vote`;
+
+    }
+    else
+    {
+        document.getElementById("result").innerHTML=`${a} is not eligible vote`;
+    }
+}
+    
+    //if(a%2==0)
+    // {
+   //    document.getElementById("result").innerHTML=`${a} is even number`;
+    // }
+    // else
+    // {
+        // document.getElementById("result").innerHTML=`${a} is not even number`;
+    // /}
+    //
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="enter number">
+    <br>
+    <input  type="button" onclick="display()" value="res">
+    <div id="result"></div>
+</body>
+</html>
