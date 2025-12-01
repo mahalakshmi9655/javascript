@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var imgarr=["pic1.jpg","pic2.jpeg","pic3.jpg","pic4.jpg"];
+        var i=0;
+        show=()=>{
+            if(i<imgarr.length-1)
+        {
+            i++;
+        }
+        else
+        {
+           i=0; 
+        }
+        document.getElementById("imgid").src="./image/"+imgarr[i];
+        }
+        
+    </script>
+</head>
+<body>
+    <img  id="imgid" src="" width="500" height="300">
+    <button onclick="show()">Next image</button>
+
+</body>
+</html>

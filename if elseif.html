@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        percent=()=>{
+        var m1=parseInt(document.getElementById("t1").value);
+    if(m1>85)
+    {
+        document.getElementById("res").innerHTML=`<br>${m1}:outstanding`;
+
+    }
+   else if(m1>75)
+    {
+        document.getElementById("res").innerHTML=`<br>${m1}:excellent`;
+
+    }
+    else if(m1>65)
+    {
+        document.getElementById("res").innerHTML=`<br>${m1}:verygood`;
+
+    }
+    else if(m1>55)
+    {
+        document.getElementById("res").innerHTML=`<br>${m1}:good`;
+
+    }
+    else {
+        document.getElementById("res").innerHTML=`<br>${m1}:blow average`;
+    }
+    
+}
+    </script>
+</head>
+<body>
+
+    <input type="text" id="t1" placeholder="enter the percentage:"><br>
+    <button onclick="percent()">Result</button>
+    <di id="res"></di>
+    
+</body>
+</html>
